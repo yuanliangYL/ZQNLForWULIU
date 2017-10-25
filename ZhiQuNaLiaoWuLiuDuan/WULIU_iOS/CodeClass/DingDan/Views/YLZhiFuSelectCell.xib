@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="93" id="KGk-i7-Jjw" customClass="YLZhiFuSelectCell">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="93"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="92.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="zhifu_kuaijie" translatesAutoresizingMaskIntoConstraints="NO" id="k0R-Kg-3to">
+                        <rect key="frame" x="20" y="32" width="28" height="29"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="招商银行储蓄卡" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mXb-rf-QYD">
+                        <rect key="frame" x="61" y="37" width="115" height="19.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                        <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="setFontByDevice">
+                                <real key="value" value="16"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="（尾号7128）" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P7A-GC-lZJ">
+                        <rect key="frame" x="176" y="38.5" width="88.5" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="setFontByDevice">
+                                <real key="value" value="14"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </label>
+                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mHB-ak-xrt">
+                        <rect key="frame" x="351" y="36" width="9" height="22"/>
+                        <state key="normal" image="jiantou_right_gray"/>
+                    </button>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PHU-Vh-qEu">
+                        <rect key="frame" x="0.0" y="91.5" width="375" height="1"/>
+                        <color key="backgroundColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.94901960780000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="VK6-g0-VDV"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="P7A-GC-lZJ" firstAttribute="centerY" secondItem="mXb-rf-QYD" secondAttribute="centerY" id="7qg-db-fEG"/>
+                    <constraint firstItem="mHB-ak-xrt" firstAttribute="centerY" secondItem="P7A-GC-lZJ" secondAttribute="centerY" id="HEC-7K-8su"/>
+                    <constraint firstItem="mXb-rf-QYD" firstAttribute="centerY" secondItem="k0R-Kg-3to" secondAttribute="centerY" id="Mx4-e8-BaY"/>
+                    <constraint firstItem="P7A-GC-lZJ" firstAttribute="leading" secondItem="mXb-rf-QYD" secondAttribute="trailing" id="VcU-Bs-Ohd"/>
+                    <constraint firstItem="k0R-Kg-3to" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="Vp4-0a-Mjx"/>
+                    <constraint firstItem="k0R-Kg-3to" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="Ztc-bC-O9j"/>
+                    <constraint firstAttribute="trailing" secondItem="mHB-ak-xrt" secondAttribute="trailing" constant="15" id="a48-kl-Elu"/>
+                    <constraint firstAttribute="trailing" secondItem="PHU-Vh-qEu" secondAttribute="trailing" id="aPh-ME-x4K"/>
+                    <constraint firstItem="mXb-rf-QYD" firstAttribute="leading" secondItem="k0R-Kg-3to" secondAttribute="trailing" constant="13" id="gwu-co-tkz"/>
+                    <constraint firstAttribute="bottom" secondItem="PHU-Vh-qEu" secondAttribute="bottom" id="hi2-cJ-Ioy"/>
+                    <constraint firstItem="PHU-Vh-qEu" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="mxL-sr-Rry"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="kaHaoLabel" destination="P7A-GC-lZJ" id="kcQ-UV-cdf"/>
+                <outlet property="kaNameLabel" destination="mXb-rf-QYD" id="RlT-cO-fvr"/>
+                <outlet property="leftImageView" destination="k0R-Kg-3to" id="FKC-cC-1eF"/>
+                <outlet property="xuanzeBtn" destination="mHB-ak-xrt" id="WDf-mD-ByL"/>
+            </connections>
+            <point key="canvasLocation" x="60.5" y="125.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="jiantou_right_gray" width="9" height="16"/>
+        <image name="zhifu_kuaijie" width="28" height="29"/>
+    </resources>
+</document>

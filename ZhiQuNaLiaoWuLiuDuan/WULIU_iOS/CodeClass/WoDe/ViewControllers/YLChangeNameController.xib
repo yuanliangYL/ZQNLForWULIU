@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="YLChangeNameController">
+            <connections>
+                <outlet property="nameTF" destination="WQl-AL-r6J" id="j1V-5T-YjZ"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KjA-0I-eoV">
+                    <rect key="frame" x="0.0" y="5" width="375" height="53.5"/>
+                    <subviews>
+                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="请输入姓名" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="WQl-AL-r6J">
+                            <rect key="frame" x="15" y="5" width="345" height="43.5"/>
+                            <nil key="textColor"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="WQl-AL-r6J" firstAttribute="top" secondItem="KjA-0I-eoV" secondAttribute="top" constant="5" id="3l8-zA-OLq"/>
+                        <constraint firstAttribute="trailing" secondItem="WQl-AL-r6J" secondAttribute="trailing" constant="15" id="62z-oF-hnH"/>
+                        <constraint firstItem="WQl-AL-r6J" firstAttribute="leading" secondItem="KjA-0I-eoV" secondAttribute="leading" constant="15" id="9ZZ-AM-YtS"/>
+                        <constraint firstAttribute="bottom" secondItem="WQl-AL-r6J" secondAttribute="bottom" constant="5" id="xMH-qa-gjd"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kfX-zh-5a7">
+                    <rect key="frame" x="34" y="247" width="307" height="40"/>
+                    <state key="normal" title="确  定" backgroundImage="btn_confirm_green">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="ConfirmAction:" destination="-1" eventType="touchUpInside" id="iAg-ML-SPn"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="0.94901960784313721" green="0.94901960784313721" blue="0.94901960784313721" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="kfX-zh-5a7" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" multiplier="0.8" id="DBY-fK-8h4"/>
+                <constraint firstItem="KjA-0I-eoV" firstAttribute="height" secondItem="i5M-Pr-FkT" secondAttribute="height" multiplier="0.08" id="I7q-Kq-wKa"/>
+                <constraint firstItem="kfX-zh-5a7" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="Xor-LV-4bx"/>
+                <constraint firstItem="KjA-0I-eoV" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="d8y-9C-vN9"/>
+                <constraint firstItem="KjA-0I-eoV" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="5" id="ntI-Nk-wY7"/>
+                <constraint firstAttribute="trailing" secondItem="KjA-0I-eoV" secondAttribute="trailing" id="qvC-A7-sDx"/>
+            </constraints>
+            <point key="canvasLocation" x="-129" y="9"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="btn_confirm_green" width="307" height="40"/>
+    </resources>
+</document>

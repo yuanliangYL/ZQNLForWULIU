@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="44" id="KGk-i7-Jjw" customClass="YLMessageCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="message_order" translatesAutoresizingMaskIntoConstraints="NO" id="BV3-qs-3vm">
+                        <rect key="frame" x="23" y="12" width="19" height="19"/>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="jiantou_right_gray" translatesAutoresizingMaskIntoConstraints="NO" id="Y5y-hv-8ht">
+                        <rect key="frame" x="293" y="13.5" width="9" height="16"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="订单消息" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="evV-Pb-uqv">
+                        <rect key="frame" x="52" y="12" width="65.5" height="19.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                        <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9P5-yv-HW5">
+                        <rect key="frame" x="0.0" y="42.5" width="320" height="1"/>
+                        <color key="backgroundColor" white="0.84800889759999998" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="53Y-uh-9PD"/>
+                        </constraints>
+                    </view>
+                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h42-5N-Zf9">
+                        <rect key="frame" x="258" y="11.5" width="20" height="20"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <state key="normal" title="10" backgroundImage="message_tishi_s">
+                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="9P5-yv-HW5" secondAttribute="trailing" id="B5d-Oo-ezN"/>
+                    <constraint firstItem="evV-Pb-uqv" firstAttribute="leading" secondItem="BV3-qs-3vm" secondAttribute="trailing" constant="10" id="DJn-IN-Bka"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="Y5y-hv-8ht" secondAttribute="trailing" constant="10" id="HRk-EY-r2C"/>
+                    <constraint firstItem="Y5y-hv-8ht" firstAttribute="leading" secondItem="h42-5N-Zf9" secondAttribute="trailing" constant="15" id="Uac-rf-WU4"/>
+                    <constraint firstItem="evV-Pb-uqv" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="WtY-Ko-9Kk"/>
+                    <constraint firstItem="h42-5N-Zf9" firstAttribute="centerY" secondItem="Y5y-hv-8ht" secondAttribute="centerY" id="aPr-gw-HWR"/>
+                    <constraint firstItem="BV3-qs-3vm" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="dXT-gB-vqA"/>
+                    <constraint firstAttribute="bottom" secondItem="9P5-yv-HW5" secondAttribute="bottom" id="dvW-ER-D54"/>
+                    <constraint firstItem="Y5y-hv-8ht" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="k8P-eS-o12"/>
+                    <constraint firstItem="BV3-qs-3vm" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="15" id="lBh-Vr-El2"/>
+                    <constraint firstItem="9P5-yv-HW5" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="xW3-LI-szX"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="leftIv" destination="BV3-qs-3vm" id="caD-u3-yPw"/>
+                <outlet property="messageBtn" destination="h42-5N-Zf9" id="jRC-TS-crh"/>
+                <outlet property="rightiv" destination="Y5y-hv-8ht" id="29N-Yy-FeJ"/>
+                <outlet property="title" destination="evV-Pb-uqv" id="GqH-YK-VTg"/>
+            </connections>
+            <point key="canvasLocation" x="76" y="-34"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="jiantou_right_gray" width="9" height="16"/>
+        <image name="message_order" width="19" height="19"/>
+        <image name="message_tishi_s" width="20" height="20"/>
+    </resources>
+</document>

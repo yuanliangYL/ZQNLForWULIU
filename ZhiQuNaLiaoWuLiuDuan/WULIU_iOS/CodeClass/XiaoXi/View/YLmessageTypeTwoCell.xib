@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="66" id="KGk-i7-Jjw" customClass="YLmessageTypeTwoCell">
+            <rect key="frame" x="0.0" y="0.0" width="430" height="66"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="430" height="66"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2017年12月12日" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KPb-fS-oE4">
+                        <rect key="frame" x="15" y="39.5" width="400" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="Cxv-Hm-fc7"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="setFontByDevice">
+                                <real key="value" value="14"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mSy-Zw-eDO">
+                        <rect key="frame" x="0.0" y="59.5" width="430" height="6"/>
+                        <color key="backgroundColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.94901960780000005" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="6" id="JLg-XW-Wk1"/>
+                        </constraints>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2017年12月12日" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xUm-1E-rmX">
+                        <rect key="frame" x="15" y="6" width="410" height="28.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="setFontByDevice">
+                                <real key="value" value="14"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wca-4N-ODc">
+                        <rect key="frame" x="415" y="5" width="10" height="10"/>
+                        <color key="backgroundColor" red="0.94509803920000002" green="0.019607843140000001" blue="0.019607843140000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="10" id="Rbo-oH-d8o"/>
+                            <constraint firstAttribute="width" constant="10" id="bMP-7B-FSL"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="xUm-1E-rmX" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="6" id="3qM-1C-Eot"/>
+                    <constraint firstItem="mSy-Zw-eDO" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="8ee-k5-YgQ"/>
+                    <constraint firstItem="xUm-1E-rmX" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="BXO-Ui-JnO"/>
+                    <constraint firstAttribute="trailing" secondItem="wca-4N-ODc" secondAttribute="trailing" constant="5" id="BqW-co-M1k"/>
+                    <constraint firstAttribute="trailing" secondItem="mSy-Zw-eDO" secondAttribute="trailing" id="HYg-Ov-ynH"/>
+                    <constraint firstItem="KPb-fS-oE4" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="Mz9-2y-tw8"/>
+                    <constraint firstItem="wca-4N-ODc" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="cpc-QC-nEF"/>
+                    <constraint firstAttribute="trailing" secondItem="xUm-1E-rmX" secondAttribute="trailing" constant="5" id="hvZ-1R-QRs"/>
+                    <constraint firstAttribute="trailing" secondItem="KPb-fS-oE4" secondAttribute="trailing" constant="15" id="rkJ-Bh-OTI"/>
+                    <constraint firstItem="KPb-fS-oE4" firstAttribute="top" secondItem="xUm-1E-rmX" secondAttribute="bottom" constant="5" id="uko-wA-EQs"/>
+                    <constraint firstItem="mSy-Zw-eDO" firstAttribute="top" secondItem="KPb-fS-oE4" secondAttribute="bottom" id="vy2-A1-ECK"/>
+                    <constraint firstAttribute="bottom" secondItem="mSy-Zw-eDO" secondAttribute="bottom" id="zUg-SZ-s2r"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="detailLabel" destination="xUm-1E-rmX" id="6mq-xW-vD7"/>
+                <outlet property="stateView" destination="wca-4N-ODc" id="Elw-nc-Zsf"/>
+                <outlet property="timeLabel" destination="KPb-fS-oE4" id="z6n-ZQ-CsV"/>
+            </connections>
+            <point key="canvasLocation" x="-321" y="-106"/>
+        </tableViewCell>
+    </objects>
+</document>

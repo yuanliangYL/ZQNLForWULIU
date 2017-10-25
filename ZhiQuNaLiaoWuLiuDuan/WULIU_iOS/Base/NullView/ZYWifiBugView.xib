@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="8ce-ot-OqS" customClass="ZYLoadingDataView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="请轻触屏幕重新加载" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dCc-QO-jHS">
+                    <rect key="frame" x="109.5" y="277" width="156" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="setFontByDevice">
+                            <real key="value" value="17"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="网络异常" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XFh-4j-Bay">
+                    <rect key="frame" x="152.5" y="244" width="70" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="wifibug" translatesAutoresizingMaskIntoConstraints="NO" id="KJd-WH-Hqn">
+                    <rect key="frame" x="130" y="115" width="114" height="104"/>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.94901960780000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="dCc-QO-jHS" firstAttribute="top" secondItem="XFh-4j-Bay" secondAttribute="bottom" constant="12" id="HUr-q0-gp4"/>
+                <constraint firstItem="KJd-WH-Hqn" firstAttribute="centerY" secondItem="8ce-ot-OqS" secondAttribute="centerY" multiplier="0.5" id="Ngl-1r-ZM7"/>
+                <constraint firstItem="KJd-WH-Hqn" firstAttribute="centerX" secondItem="8ce-ot-OqS" secondAttribute="centerX" id="jBO-DE-Ht4"/>
+                <constraint firstItem="XFh-4j-Bay" firstAttribute="top" secondItem="KJd-WH-Hqn" secondAttribute="bottom" constant="25" id="oJt-yn-idd"/>
+                <constraint firstItem="XFh-4j-Bay" firstAttribute="centerX" secondItem="8ce-ot-OqS" secondAttribute="centerX" id="rZn-1F-vwf"/>
+                <constraint firstItem="dCc-QO-jHS" firstAttribute="centerX" secondItem="XFh-4j-Bay" secondAttribute="centerX" id="txT-p4-DOH"/>
+            </constraints>
+        </view>
+    </objects>
+    <resources>
+        <image name="wifibug" width="114" height="104"/>
+    </resources>
+</document>

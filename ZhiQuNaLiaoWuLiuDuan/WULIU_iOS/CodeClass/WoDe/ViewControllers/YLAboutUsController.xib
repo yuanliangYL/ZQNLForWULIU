@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="YLAboutUsController">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="photo_5" translatesAutoresizingMaskIntoConstraints="NO" id="Wtm-tb-9Pf">
+                    <rect key="frame" x="75" y="100" width="225" height="133.5"/>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="纸去哪了 1.0.0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3JT-U5-qy6">
+                    <rect key="frame" x="136.5" y="253.5" width="103" height="20"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="setFontByDevice">
+                            <real key="value" value="16"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dYh-7X-MKz">
+                    <rect key="frame" x="0.0" y="333.5" width="375" height="66.5"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="前往评论" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Scx-vq-Kbb">
+                            <rect key="frame" x="15" y="24.5" width="61.5" height="18"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="setFontByDevice">
+                                    <real key="value" value="15"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </label>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="jiantou_right_gray" translatesAutoresizingMaskIntoConstraints="NO" id="AzG-PZ-MW9">
+                            <rect key="frame" x="351" y="25" width="9" height="16"/>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="AzG-PZ-MW9" secondAttribute="trailing" constant="15" id="KbU-2W-DIW"/>
+                        <constraint firstItem="Scx-vq-Kbb" firstAttribute="leading" secondItem="dYh-7X-MKz" secondAttribute="leading" constant="15" id="n45-CZ-Q8D"/>
+                        <constraint firstItem="Scx-vq-Kbb" firstAttribute="centerY" secondItem="dYh-7X-MKz" secondAttribute="centerY" id="u1r-MY-sme"/>
+                        <constraint firstItem="AzG-PZ-MW9" firstAttribute="centerY" secondItem="Scx-vq-Kbb" secondAttribute="centerY" id="xjc-i0-s8L"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="foq-UR-dmv">
+                    <rect key="frame" x="0.0" y="401" width="375" height="67"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="软件服务许可协议" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gji-vt-mAc">
+                            <rect key="frame" x="15" y="24.5" width="122.5" height="18"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="setFontByDevice">
+                                    <real key="value" value="15"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </label>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="jiantou_right_gray" translatesAutoresizingMaskIntoConstraints="NO" id="XAE-1j-Y8j">
+                            <rect key="frame" x="351" y="25.5" width="9" height="16"/>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="Gji-vt-mAc" firstAttribute="centerY" secondItem="foq-UR-dmv" secondAttribute="centerY" id="6rU-b9-Iej"/>
+                        <constraint firstItem="XAE-1j-Y8j" firstAttribute="centerY" secondItem="Gji-vt-mAc" secondAttribute="centerY" id="I7a-rh-abM"/>
+                        <constraint firstAttribute="trailing" secondItem="XAE-1j-Y8j" secondAttribute="trailing" constant="15" id="Lzo-Bx-aq8"/>
+                        <constraint firstItem="Gji-vt-mAc" firstAttribute="leading" secondItem="foq-UR-dmv" secondAttribute="leading" constant="15" id="wdi-Ig-K2y"/>
+                    </constraints>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="上海纸元网络科技有限公司" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p8j-HF-ndz">
+                    <rect key="frame" x="114" y="644.5" width="147.5" height="14.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="setFontByDevice">
+                            <real key="value" value="15"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="0.94901960784313721" green="0.94901960784313721" blue="0.94901960784313721" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="Wtm-tb-9Pf" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" multiplier="0.5" id="628-sQ-Drf"/>
+                <constraint firstItem="foq-UR-dmv" firstAttribute="height" secondItem="i5M-Pr-FkT" secondAttribute="height" multiplier="0.1" id="AJi-Fg-LH0"/>
+                <constraint firstItem="Wtm-tb-9Pf" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="I9J-8G-iNW"/>
+                <constraint firstAttribute="bottom" secondItem="p8j-HF-ndz" secondAttribute="bottom" constant="8" id="KYj-Rb-keG"/>
+                <constraint firstItem="3JT-U5-qy6" firstAttribute="centerX" secondItem="Wtm-tb-9Pf" secondAttribute="centerX" id="OvF-pW-8g0"/>
+                <constraint firstItem="foq-UR-dmv" firstAttribute="top" secondItem="dYh-7X-MKz" secondAttribute="bottom" constant="1" id="Q6g-lN-XvD"/>
+                <constraint firstItem="Wtm-tb-9Pf" firstAttribute="height" secondItem="i5M-Pr-FkT" secondAttribute="height" multiplier="0.2" id="UtZ-7k-Mka"/>
+                <constraint firstAttribute="trailing" secondItem="dYh-7X-MKz" secondAttribute="trailing" id="YmD-EY-1rl"/>
+                <constraint firstItem="Wtm-tb-9Pf" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" multiplier="0.6" id="hsJ-MJ-D3s"/>
+                <constraint firstItem="p8j-HF-ndz" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="kzA-3O-8GM"/>
+                <constraint firstItem="foq-UR-dmv" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="ojd-PO-lXQ"/>
+                <constraint firstItem="dYh-7X-MKz" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="orN-1K-MSF"/>
+                <constraint firstAttribute="trailing" secondItem="foq-UR-dmv" secondAttribute="trailing" id="qbR-ne-Zqs"/>
+                <constraint firstItem="3JT-U5-qy6" firstAttribute="top" secondItem="Wtm-tb-9Pf" secondAttribute="bottom" constant="20" id="sbI-fP-o5u"/>
+                <constraint firstItem="dYh-7X-MKz" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" multiplier="1.1" id="vqu-vg-gEq"/>
+                <constraint firstItem="dYh-7X-MKz" firstAttribute="height" secondItem="i5M-Pr-FkT" secondAttribute="height" multiplier="0.1" id="z5F-r7-Xb4"/>
+            </constraints>
+            <point key="canvasLocation" x="38" y="-72"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="jiantou_right_gray" width="9" height="16"/>
+        <image name="photo_5" width="217" height="129"/>
+    </resources>
+</document>

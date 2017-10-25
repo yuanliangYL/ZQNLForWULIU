@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="YLBankManageCell"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="YLBankManageCell" rowHeight="221" id="KGk-i7-Jjw" customClass="YLBankManageCell">
+            <rect key="frame" x="0.0" y="0.0" width="514" height="221"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="514" height="221"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Qqk-ZT-rcI">
+                        <rect key="frame" x="0.0" y="143.5" width="514" height="77"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TC3-EA-E43">
+                                <rect key="frame" x="400" y="28.5" width="44" height="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <state key="normal" title="编辑" image="dizhiguanli_bianji">
+                                    <color key="titleColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="setFontByDevice">
+                                        <real key="value" value="15"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q7F-Yr-kUL">
+                                <rect key="frame" x="15" y="30" width="51" height="18"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <state key="normal" title="  默认" image="dizhiguanli_moren_n">
+                                    <color key="titleColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <state key="selected" image="dizhiguanli_moren_p">
+                                    <color key="titleColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="setFontByDevice">
+                                        <real key="value" value="15"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Qpw-s0-Drv">
+                                <rect key="frame" x="0.0" y="75.5" width="514" height="1"/>
+                                <color key="backgroundColor" white="0.8452148438" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="ras-k9-23g"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MZa-dm-LCM">
+                                <rect key="frame" x="464" y="28.5" width="42" height="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <state key="normal" title="删除" image="dizhiguanli_cancel">
+                                    <color key="titleColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="setFontByDevice">
+                                        <real key="value" value="15"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="q7F-Yr-kUL" firstAttribute="centerY" secondItem="Qqk-ZT-rcI" secondAttribute="centerY" id="4lN-0a-8a4"/>
+                            <constraint firstItem="MZa-dm-LCM" firstAttribute="centerY" secondItem="Qqk-ZT-rcI" secondAttribute="centerY" constant="-1.25" id="NNm-1d-NNW"/>
+                            <constraint firstItem="TC3-EA-E43" firstAttribute="centerY" secondItem="MZa-dm-LCM" secondAttribute="centerY" id="OQy-Iw-zQs"/>
+                            <constraint firstAttribute="trailing" secondItem="Qpw-s0-Drv" secondAttribute="trailing" id="bpd-0e-wPq"/>
+                            <constraint firstAttribute="bottom" secondItem="Qpw-s0-Drv" secondAttribute="bottom" id="cFD-ha-vK5"/>
+                            <constraint firstItem="MZa-dm-LCM" firstAttribute="leading" secondItem="TC3-EA-E43" secondAttribute="trailing" constant="20" id="fr7-wf-3fD"/>
+                            <constraint firstItem="Qpw-s0-Drv" firstAttribute="leading" secondItem="Qqk-ZT-rcI" secondAttribute="leading" id="m9w-7d-OPO"/>
+                            <constraint firstAttribute="trailing" secondItem="MZa-dm-LCM" secondAttribute="trailing" constant="8" id="qDh-U4-j2o"/>
+                            <constraint firstItem="q7F-Yr-kUL" firstAttribute="leading" secondItem="Qqk-ZT-rcI" secondAttribute="leading" constant="15" id="u2P-K3-7aa"/>
+                        </constraints>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9w2-mO-4I2">
+                        <rect key="frame" x="0.0" y="10" width="514" height="132.5"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="yinhangka_zg" translatesAutoresizingMaskIntoConstraints="NO" id="Mlg-79-2aa">
+                                <rect key="frame" x="15" y="40.5" width="50" height="50"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="储蓄卡" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oz2-Wx-o95">
+                                <rect key="frame" x="75" y="57" width="46" height="18"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="setFontByDevice">
+                                        <real key="value" value="15"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="**** **** **** 3287" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EGR-H2-pgc">
+                                <rect key="frame" x="75" y="96" width="127.5" height="18"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="setFontByDevice">
+                                        <real key="value" value="15"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="中国工商银行" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lrF-j8-lpS">
+                                <rect key="frame" x="75" y="17" width="92" height="18"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="setFontByDevice">
+                                        <real key="value" value="15"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Mlg-79-2aa" firstAttribute="leading" secondItem="9w2-mO-4I2" secondAttribute="leading" constant="15" id="7vf-Mb-Ldl"/>
+                            <constraint firstItem="oz2-Wx-o95" firstAttribute="centerY" secondItem="Mlg-79-2aa" secondAttribute="centerY" id="9tK-kH-poP"/>
+                            <constraint firstItem="lrF-j8-lpS" firstAttribute="centerY" secondItem="Mlg-79-2aa" secondAttribute="centerY" multiplier="0.4" id="Anz-7q-GfH"/>
+                            <constraint firstItem="oz2-Wx-o95" firstAttribute="leading" secondItem="Mlg-79-2aa" secondAttribute="trailing" constant="10" id="M6t-he-3Nl"/>
+                            <constraint firstItem="EGR-H2-pgc" firstAttribute="leading" secondItem="Mlg-79-2aa" secondAttribute="trailing" constant="10" id="VvS-Ax-UCP"/>
+                            <constraint firstItem="EGR-H2-pgc" firstAttribute="centerY" secondItem="Mlg-79-2aa" secondAttribute="centerY" multiplier="1.6" id="itf-3v-9gR"/>
+                            <constraint firstItem="Mlg-79-2aa" firstAttribute="centerY" secondItem="9w2-mO-4I2" secondAttribute="centerY" id="rln-ze-jdt"/>
+                            <constraint firstItem="lrF-j8-lpS" firstAttribute="leading" secondItem="Mlg-79-2aa" secondAttribute="trailing" constant="10" id="sWE-aQ-ElU"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="0.8452148438" alpha="1" colorSpace="calibratedWhite"/>
+                <constraints>
+                    <constraint firstItem="Qqk-ZT-rcI" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="D4V-N6-A5d"/>
+                    <constraint firstAttribute="trailing" secondItem="Qqk-ZT-rcI" secondAttribute="trailing" id="Fkg-Z0-oWT"/>
+                    <constraint firstItem="9w2-mO-4I2" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="JyF-Ap-ibt"/>
+                    <constraint firstItem="Qqk-ZT-rcI" firstAttribute="height" secondItem="H2p-sc-9uM" secondAttribute="height" multiplier="0.35" id="Lxl-T3-r2D"/>
+                    <constraint firstAttribute="trailing" secondItem="9w2-mO-4I2" secondAttribute="trailing" id="Z87-pC-DcD"/>
+                    <constraint firstItem="9w2-mO-4I2" firstAttribute="height" secondItem="H2p-sc-9uM" secondAttribute="height" multiplier="0.6" id="g1G-rz-BwL"/>
+                    <constraint firstItem="Qqk-ZT-rcI" firstAttribute="top" secondItem="9w2-mO-4I2" secondAttribute="bottom" constant="1" id="kxl-gp-NBP"/>
+                    <constraint firstAttribute="bottom" secondItem="Qqk-ZT-rcI" secondAttribute="bottom" id="sR2-cl-oCt"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="defaultBtn" destination="q7F-Yr-kUL" id="tTx-T1-Yb8"/>
+                <outlet property="deleteBtn" destination="MZa-dm-LCM" id="XsT-9n-DJC"/>
+                <outlet property="editBtn" destination="TC3-EA-E43" id="d8U-87-Tr4"/>
+                <outlet property="nameLbale" destination="lrF-j8-lpS" id="Aft-Mi-Uh2"/>
+                <outlet property="numberLabel" destination="EGR-H2-pgc" id="uYa-Bt-p56"/>
+                <outlet property="typeLabel" destination="oz2-Wx-o95" id="huT-wC-OL6"/>
+            </connections>
+            <point key="canvasLocation" x="-647" y="-57"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="dizhiguanli_bianji" width="15" height="12"/>
+        <image name="dizhiguanli_cancel" width="13" height="13"/>
+        <image name="dizhiguanli_moren_n" width="12" height="12"/>
+        <image name="dizhiguanli_moren_p" width="12" height="12"/>
+        <image name="yinhangka_zg" width="50" height="50"/>
+    </resources>
+</document>

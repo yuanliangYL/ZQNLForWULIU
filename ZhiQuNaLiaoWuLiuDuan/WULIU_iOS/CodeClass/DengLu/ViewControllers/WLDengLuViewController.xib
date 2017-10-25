@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="WLDengLuViewController">
+            <connections>
+                <outlet property="countLogin" destination="Vmj-BL-IXi" id="Pb5-Y1-E1B"/>
+                <outlet property="fastLoginBtn" destination="a3A-AM-U4s" id="kfn-t2-qSX"/>
+                <outlet property="loginStatusSlideView" destination="7oi-Ak-805" id="Rl6-eJ-OpT"/>
+                <outlet property="loginTypeView" destination="A4U-d3-Ucf" id="wmE-8T-Qzz"/>
+                <outlet property="view" destination="Lca-ep-x2s" id="6f4-qH-oxI"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="Lca-ep-x2s">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="login_logo" translatesAutoresizingMaskIntoConstraints="NO" id="bIE-R3-r0n">
+                    <rect key="frame" x="122" y="96" width="131" height="75"/>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a3A-AM-U4s">
+                    <rect key="frame" x="62" y="233.5" width="82" height="33"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                    <state key="normal" title="快 捷 登 陆">
+                        <color key="titleColor" red="0.27450980390000002" green="0.75294117650000003" blue="0.1058823529" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="setFontByDevice">
+                            <real key="value" value="17"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="lofinTypeSelect:" destination="-1" eventType="touchUpInside" id="zic-2O-pa6"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vmj-BL-IXi">
+                    <rect key="frame" x="231" y="233.5" width="82" height="33"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                    <state key="normal" title="账 号 登 陆">
+                        <color key="titleColor" red="0.27450980390000002" green="0.75294117650000003" blue="0.1058823529" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="setFontByDevice">
+                            <real key="value" value="17"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="lofinTypeSelect:" destination="-1" eventType="touchUpInside" id="2RD-j0-NcG"/>
+                    </connections>
+                </button>
+                <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8lg-QL-T6e">
+                    <rect key="frame" x="25" y="268.5" width="325" height="2.5"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7oi-Ak-805">
+                            <rect key="frame" x="0.0" y="0.0" width="162.5" height="2.5"/>
+                            <color key="backgroundColor" red="0.27450980390000002" green="0.75294117650000003" blue="0.1058823529" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="2.5" id="bMn-nc-g5i"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.94901960780000005" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstItem="7oi-Ak-805" firstAttribute="top" secondItem="8lg-QL-T6e" secondAttribute="top" id="BY3-YH-R0C"/>
+                        <constraint firstItem="7oi-Ak-805" firstAttribute="width" secondItem="8lg-QL-T6e" secondAttribute="width" multiplier="0.5" id="EOx-F2-Qcm"/>
+                        <constraint firstAttribute="bottom" secondItem="7oi-Ak-805" secondAttribute="bottom" id="P2a-Yv-AqU"/>
+                        <constraint firstItem="7oi-Ak-805" firstAttribute="leading" secondItem="8lg-QL-T6e" secondAttribute="leading" id="c3T-f1-Qdd"/>
+                        <constraint firstAttribute="height" constant="2.5" id="cDh-lQ-Pqe"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="A4U-d3-Ucf">
+                    <rect key="frame" x="25" y="281" width="325" height="386"/>
+                    <color key="backgroundColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.94901960780000005" alpha="1" colorSpace="calibratedRGB"/>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="bIE-R3-r0n" firstAttribute="centerY" secondItem="Lca-ep-x2s" secondAttribute="centerY" multiplier="0.4" id="1cI-2W-q70"/>
+                <constraint firstAttribute="bottom" secondItem="A4U-d3-Ucf" secondAttribute="bottom" id="ABw-7b-z6R"/>
+                <constraint firstItem="8lg-QL-T6e" firstAttribute="leading" secondItem="Lca-ep-x2s" secondAttribute="leading" constant="25" id="Cn8-iO-DqE"/>
+                <constraint firstItem="A4U-d3-Ucf" firstAttribute="top" secondItem="8lg-QL-T6e" secondAttribute="bottom" constant="10" id="Ggl-6t-p2I"/>
+                <constraint firstItem="a3A-AM-U4s" firstAttribute="centerX" secondItem="Lca-ep-x2s" secondAttribute="centerX" multiplier="0.55" id="Glz-HM-SJv"/>
+                <constraint firstItem="8lg-QL-T6e" firstAttribute="top" secondItem="Vmj-BL-IXi" secondAttribute="bottom" constant="2" id="I3d-c2-A4k"/>
+                <constraint firstItem="A4U-d3-Ucf" firstAttribute="leading" secondItem="Lca-ep-x2s" secondAttribute="leading" constant="25" id="LwK-tW-wXV"/>
+                <constraint firstAttribute="trailing" secondItem="8lg-QL-T6e" secondAttribute="trailing" constant="25" id="MDX-MU-yct"/>
+                <constraint firstItem="a3A-AM-U4s" firstAttribute="centerY" secondItem="Lca-ep-x2s" secondAttribute="centerY" multiplier="0.75" id="NWV-jW-Jk2"/>
+                <constraint firstAttribute="trailing" secondItem="A4U-d3-Ucf" secondAttribute="trailing" constant="25" id="Py2-oO-Njh"/>
+                <constraint firstItem="bIE-R3-r0n" firstAttribute="centerX" secondItem="Lca-ep-x2s" secondAttribute="centerX" id="WON-yY-fyj"/>
+                <constraint firstItem="Vmj-BL-IXi" firstAttribute="centerX" secondItem="Lca-ep-x2s" secondAttribute="centerX" multiplier="1.45" id="fMD-Yt-mJS"/>
+                <constraint firstItem="Vmj-BL-IXi" firstAttribute="centerY" secondItem="Lca-ep-x2s" secondAttribute="centerY" multiplier="0.75" id="fUz-Sb-BXG"/>
+            </constraints>
+            <point key="canvasLocation" x="-1178.5" y="-561.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="login_logo" width="131" height="75"/>
+    </resources>
+</document>

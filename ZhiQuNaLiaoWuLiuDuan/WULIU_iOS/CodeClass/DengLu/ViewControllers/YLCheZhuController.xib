@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="YLCheZhuController">
+            <connections>
+                <outlet property="datePicker" destination="IUW-5Y-1RZ" id="3lC-n7-OSn"/>
+                <outlet property="dateSelecteView" destination="SPx-Gi-DW0" id="8gk-PJ-DcY"/>
+                <outlet property="modalViewTopCons" destination="Rrt-1U-hlv" id="o2h-it-VJk"/>
+                <outlet property="tableView" destination="tHW-Pb-yAi" id="6d3-Yc-isI"/>
+                <outlet property="view" destination="iN0-l3-epB" id="rkG-wX-lsx"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="tHW-Pb-yAi">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="VGK-oI-V6n"/>
+                        <outlet property="delegate" destination="-1" id="dHw-33-xgY"/>
+                    </connections>
+                </tableView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SPx-Gi-DW0" userLabel="dateSelecteView">
+                    <rect key="frame" x="0.0" y="400" width="375" height="667"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="e8f-XY-FaL">
+                            <rect key="frame" x="0.0" y="200" width="375" height="467"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wwN-Cm-I2d">
+                                    <rect key="frame" x="20" y="19" width="33" height="32"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                    <state key="normal" title="取消">
+                                        <color key="titleColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="cancleAction:" destination="-1" eventType="touchUpInside" id="ZLY-xN-eMr"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dBh-z0-vGN">
+                                    <rect key="frame" x="322" y="19" width="33" height="32"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                    <state key="normal" title="确认">
+                                        <color key="titleColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="confirmActionSelecteDate:" destination="-1" eventType="touchUpInside" id="ViT-ui-oK7"/>
+                                    </connections>
+                                </button>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="请选择驾驶证领证日期" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OWa-5v-MQ1">
+                                    <rect key="frame" x="111" y="26" width="153" height="18"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                    <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="jiashizheng_shili_riqi" translatesAutoresizingMaskIntoConstraints="NO" id="nEN-yq-nhF">
+                                    <rect key="frame" x="64" y="49" width="246" height="140"/>
+                                </imageView>
+                                <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="IUW-5Y-1RZ">
+                                    <rect key="frame" x="0.0" y="246" width="375" height="216"/>
+                                    <date key="date" timeIntervalSinceReferenceDate="525082232.49468797">
+                                        <!--2017-08-22 08:10:32 +0000-->
+                                    </date>
+                                    <date key="minimumDate" timeIntervalSinceReferenceDate="-978267600">
+                                        <!--1970-01-01 11:00:00 +0000-->
+                                    </date>
+                                    <date key="maximumDate" timeIntervalSinceReferenceDate="788871600">
+                                        <!--2025-12-31 11:00:00 +0000-->
+                                    </date>
+                                </datePicker>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstItem="nEN-yq-nhF" firstAttribute="top" secondItem="OWa-5v-MQ1" secondAttribute="bottom" constant="5" id="22s-9a-O7A"/>
+                                <constraint firstItem="nEN-yq-nhF" firstAttribute="height" secondItem="e8f-XY-FaL" secondAttribute="height" multiplier="0.3" id="6RI-vH-eHZ"/>
+                                <constraint firstItem="nEN-yq-nhF" firstAttribute="centerX" secondItem="OWa-5v-MQ1" secondAttribute="centerX" id="8hT-Ss-li4"/>
+                                <constraint firstAttribute="bottom" secondItem="IUW-5Y-1RZ" secondAttribute="bottom" constant="5" id="Bfb-KW-xqk"/>
+                                <constraint firstItem="IUW-5Y-1RZ" firstAttribute="leading" secondItem="e8f-XY-FaL" secondAttribute="leading" id="Qcg-Sd-V9o"/>
+                                <constraint firstItem="OWa-5v-MQ1" firstAttribute="centerY" secondItem="wwN-Cm-I2d" secondAttribute="centerY" id="bRY-Yh-HsI"/>
+                                <constraint firstItem="OWa-5v-MQ1" firstAttribute="centerX" secondItem="e8f-XY-FaL" secondAttribute="centerX" id="ftI-Da-p2K"/>
+                                <constraint firstItem="dBh-z0-vGN" firstAttribute="centerY" secondItem="wwN-Cm-I2d" secondAttribute="centerY" id="kbf-X7-Pzt"/>
+                                <constraint firstItem="wwN-Cm-I2d" firstAttribute="leading" secondItem="e8f-XY-FaL" secondAttribute="leading" constant="20" id="lr0-TH-crD"/>
+                                <constraint firstAttribute="trailing" secondItem="dBh-z0-vGN" secondAttribute="trailing" constant="20" id="ndR-Ln-MBw"/>
+                                <constraint firstItem="wwN-Cm-I2d" firstAttribute="centerY" secondItem="e8f-XY-FaL" secondAttribute="centerY" multiplier="0.15" id="q7I-1K-aBR"/>
+                                <constraint firstAttribute="trailing" secondItem="IUW-5Y-1RZ" secondAttribute="trailing" id="wst-py-CDp"/>
+                            </constraints>
+                        </view>
+                        <view alpha="0.59999999999999998" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vcU-Ul-rys">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="200"/>
+                            <color key="backgroundColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <gestureRecognizers/>
+                            <connections>
+                                <outletCollection property="gestureRecognizers" destination="fsz-U6-4sx" appends="YES" id="uup-8t-Jcd"/>
+                            </connections>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="vcU-Ul-rys" secondAttribute="trailing" id="Ki9-vv-fNY"/>
+                        <constraint firstItem="e8f-XY-FaL" firstAttribute="leading" secondItem="SPx-Gi-DW0" secondAttribute="leading" id="SXS-hC-ewz"/>
+                        <constraint firstAttribute="bottom" secondItem="e8f-XY-FaL" secondAttribute="bottom" id="VLs-lY-bVK"/>
+                        <constraint firstItem="vcU-Ul-rys" firstAttribute="height" secondItem="SPx-Gi-DW0" secondAttribute="height" multiplier="0.3" id="eLx-n0-tM8"/>
+                        <constraint firstItem="e8f-XY-FaL" firstAttribute="height" secondItem="SPx-Gi-DW0" secondAttribute="height" multiplier="0.7" id="fAG-OS-idc"/>
+                        <constraint firstAttribute="trailing" secondItem="e8f-XY-FaL" secondAttribute="trailing" id="tYa-Sm-LHD"/>
+                        <constraint firstItem="vcU-Ul-rys" firstAttribute="leading" secondItem="SPx-Gi-DW0" secondAttribute="leading" id="uCR-lp-v3M"/>
+                        <constraint firstItem="vcU-Ul-rys" firstAttribute="top" secondItem="SPx-Gi-DW0" secondAttribute="top" id="xC3-O2-fJo"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="tHW-Pb-yAi" secondAttribute="trailing" id="CP7-3G-DMR"/>
+                <constraint firstItem="tHW-Pb-yAi" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="FsW-oB-1AF"/>
+                <constraint firstItem="SPx-Gi-DW0" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="400" id="Rrt-1U-hlv"/>
+                <constraint firstAttribute="bottom" secondItem="tHW-Pb-yAi" secondAttribute="bottom" id="gHZ-Aw-MQ8"/>
+                <constraint firstItem="SPx-Gi-DW0" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="jgd-IS-WS0"/>
+                <constraint firstItem="SPx-Gi-DW0" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" id="rj5-bb-QiM"/>
+                <constraint firstItem="SPx-Gi-DW0" firstAttribute="height" secondItem="iN0-l3-epB" secondAttribute="height" id="tox-ND-YCO"/>
+                <constraint firstItem="tHW-Pb-yAi" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="xDn-w6-UPJ"/>
+            </constraints>
+            <point key="canvasLocation" x="317" y="-427"/>
+        </view>
+        <tapGestureRecognizer id="fsz-U6-4sx">
+            <connections>
+                <action selector="tapCloseAction:" destination="-1" id="fQ8-6g-qIY"/>
+            </connections>
+        </tapGestureRecognizer>
+    </objects>
+    <resources>
+        <image name="jiashizheng_shili_riqi" width="246" height="169"/>
+    </resources>
+</document>

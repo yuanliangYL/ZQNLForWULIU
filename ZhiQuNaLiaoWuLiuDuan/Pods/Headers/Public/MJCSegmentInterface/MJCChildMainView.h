@@ -1,0 +1,1 @@
+../../../MJCSegmentInterface/MJCSegmentInterface/MJCSegmentInterface/MJCSlideInterface/childs/MJCChildMainView.h

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="YLCheXingCell">
+            <rect key="frame" x="0.0" y="0.0" width="159" height="116"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="159" height="116"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="car_lanbanshi" translatesAutoresizingMaskIntoConstraints="NO" id="0Yd-yh-7py">
+                        <rect key="frame" x="29" y="9" width="102" height="69"/>
+                    </imageView>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nPo-7r-LQS">
+                        <rect key="frame" x="55" y="84" width="50" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <state key="normal" title="牵引车" image="car_xuanzhong">
+                            <color key="titleColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </state>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="setFontByDevice">
+                                <real key="value" value="14"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </button>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="nPo-7r-LQS" firstAttribute="centerY" secondItem="gTV-IL-0wX" secondAttribute="centerY" multiplier="1.6" id="KRr-XR-Spl"/>
+                <constraint firstItem="nPo-7r-LQS" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="KiO-7B-6Mr"/>
+                <constraint firstItem="0Yd-yh-7py" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="naD-yO-kFh"/>
+                <constraint firstItem="0Yd-yh-7py" firstAttribute="centerY" secondItem="gTV-IL-0wX" secondAttribute="centerY" multiplier="0.75" id="vm1-w4-mom"/>
+            </constraints>
+            <size key="customSize" width="159" height="116"/>
+            <connections>
+                <outlet property="image" destination="0Yd-yh-7py" id="KUg-aP-X4A"/>
+                <outlet property="name" destination="nPo-7r-LQS" id="zJf-K7-YoR"/>
+            </connections>
+            <point key="canvasLocation" x="-79.5" y="21"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="car_lanbanshi" width="102" height="69"/>
+        <image name="car_xuanzhong" width="7" height="7"/>
+    </resources>
+</document>

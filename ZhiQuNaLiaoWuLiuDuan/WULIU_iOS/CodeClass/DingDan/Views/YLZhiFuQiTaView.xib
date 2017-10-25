@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="GVD-ly-3GO" customClass="YLZhiFuQiTaView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view alpha="0.5" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Q7l-Wx-jRw">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </view>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="mY1-ia-Shf">
+                    <rect key="frame" x="0.0" y="333.5" width="375" height="333.5"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="KLs-Ay-cCs"/>
+                        <outlet property="delegate" destination="-1" id="jVv-m3-XdH"/>
+                    </connections>
+                </tableView>
+            </subviews>
+            <constraints>
+                <constraint firstItem="mY1-ia-Shf" firstAttribute="height" secondItem="GVD-ly-3GO" secondAttribute="height" multiplier="1/2" id="4uW-jh-MGM"/>
+                <constraint firstItem="Q7l-Wx-jRw" firstAttribute="top" secondItem="GVD-ly-3GO" secondAttribute="top" id="6PL-Sr-SRz"/>
+                <constraint firstAttribute="trailing" secondItem="mY1-ia-Shf" secondAttribute="trailing" id="MRu-RA-GDl"/>
+                <constraint firstItem="Q7l-Wx-jRw" firstAttribute="leading" secondItem="GVD-ly-3GO" secondAttribute="leading" id="UxJ-ti-cXd"/>
+                <constraint firstAttribute="bottom" secondItem="mY1-ia-Shf" secondAttribute="bottom" id="gzj-6U-sf1"/>
+                <constraint firstAttribute="bottom" secondItem="Q7l-Wx-jRw" secondAttribute="bottom" id="rpw-SU-vcp"/>
+                <constraint firstItem="mY1-ia-Shf" firstAttribute="leading" secondItem="GVD-ly-3GO" secondAttribute="leading" id="sDY-k7-0gS"/>
+                <constraint firstAttribute="trailing" secondItem="Q7l-Wx-jRw" secondAttribute="trailing" id="zR4-py-X9K"/>
+            </constraints>
+            <connections>
+                <outlet property="zhifuTableView" destination="mY1-ia-Shf" id="mZ5-Ta-wu8"/>
+            </connections>
+            <point key="canvasLocation" x="32.5" y="89.5"/>
+        </view>
+    </objects>
+</document>

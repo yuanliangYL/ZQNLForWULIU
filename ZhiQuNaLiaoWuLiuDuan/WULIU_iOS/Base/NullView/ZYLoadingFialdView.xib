@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="Qhu-Ps-rZf" customClass="ZYLoadingDataView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PCI-hJ-eLb">
+                    <rect key="frame" x="132.5" y="127.5" width="110" height="79"/>
+                    <state key="normal" image="nullwifi"/>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="界面信息加载失败" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z6j-nT-5gT">
+                    <rect key="frame" x="118" y="231.5" width="139" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="请点击页面重新刷新" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qIN-7c-syZ">
+                    <rect key="frame" x="109.5" y="264.5" width="156" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="setFontByDevice">
+                            <real key="value" value="17"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.94901960780000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="z6j-nT-5gT" firstAttribute="top" secondItem="PCI-hJ-eLb" secondAttribute="bottom" constant="25" id="KO5-A4-0Os"/>
+                <constraint firstItem="PCI-hJ-eLb" firstAttribute="centerX" secondItem="Qhu-Ps-rZf" secondAttribute="centerX" id="cPr-dL-8Lp"/>
+                <constraint firstItem="qIN-7c-syZ" firstAttribute="centerX" secondItem="PCI-hJ-eLb" secondAttribute="centerX" id="hEs-Du-Bbf"/>
+                <constraint firstItem="PCI-hJ-eLb" firstAttribute="centerY" secondItem="Qhu-Ps-rZf" secondAttribute="centerY" multiplier="0.5" id="hi9-JI-7cJ"/>
+                <constraint firstItem="qIN-7c-syZ" firstAttribute="centerX" secondItem="z6j-nT-5gT" secondAttribute="centerX" id="qBD-e2-mKn"/>
+                <constraint firstItem="qIN-7c-syZ" firstAttribute="top" secondItem="z6j-nT-5gT" secondAttribute="bottom" constant="12" id="wPb-bp-mjG"/>
+                <constraint firstItem="z6j-nT-5gT" firstAttribute="centerX" secondItem="PCI-hJ-eLb" secondAttribute="centerX" id="wvx-1h-96W"/>
+            </constraints>
+        </view>
+    </objects>
+    <resources>
+        <image name="nullwifi" width="110" height="79"/>
+    </resources>
+</document>

@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="YLUserInfoController">
+            <connections>
+                <outlet property="nameLabel" destination="nS6-qM-nGY" id="Efy-cG-1R0"/>
+                <outlet property="user_imageview" destination="npC-h1-17H" id="Jf6-F3-PhP"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4lE-wN-Rav">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="106.5"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="npC-h1-17H">
+                            <rect key="frame" x="15" y="28.5" width="50" height="50"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="50" id="Clr-XY-Aau"/>
+                                <constraint firstAttribute="width" constant="50" id="cQ9-Lh-bQr"/>
+                            </constraints>
+                        </imageView>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="jiantou_right_gray" translatesAutoresizingMaskIntoConstraints="NO" id="FWc-8A-e5H">
+                            <rect key="frame" x="351" y="45.5" width="9" height="16"/>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="请选择头像" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3xr-HC-465">
+                            <rect key="frame" x="264.5" y="44.5" width="76.5" height="18"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="setFontByDevice">
+                                    <real key="value" value="15"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <gestureRecognizers/>
+                    <constraints>
+                        <constraint firstItem="npC-h1-17H" firstAttribute="leading" secondItem="4lE-wN-Rav" secondAttribute="leading" constant="15" id="Qww-Ey-jxe"/>
+                        <constraint firstItem="FWc-8A-e5H" firstAttribute="leading" secondItem="3xr-HC-465" secondAttribute="trailing" constant="10" id="aXO-qC-rAZ"/>
+                        <constraint firstAttribute="trailing" secondItem="FWc-8A-e5H" secondAttribute="trailing" constant="15" id="iZs-DX-YbE"/>
+                        <constraint firstItem="3xr-HC-465" firstAttribute="centerY" secondItem="npC-h1-17H" secondAttribute="centerY" id="pMs-Yf-IQy"/>
+                        <constraint firstItem="FWc-8A-e5H" firstAttribute="centerY" secondItem="npC-h1-17H" secondAttribute="centerY" id="pbB-if-59M"/>
+                        <constraint firstItem="npC-h1-17H" firstAttribute="centerY" secondItem="4lE-wN-Rav" secondAttribute="centerY" id="vCb-tw-ztn"/>
+                    </constraints>
+                    <connections>
+                        <outletCollection property="gestureRecognizers" destination="6Vu-Df-7Jg" appends="YES" id="bJm-VP-5sN"/>
+                    </connections>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uTn-ZJ-3mk">
+                    <rect key="frame" x="0.0" y="107.5" width="375" height="66.5"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bitian_xinghao" translatesAutoresizingMaskIntoConstraints="NO" id="dwi-4t-Ffk">
+                            <rect key="frame" x="15" y="28" width="10" height="10"/>
+                        </imageView>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="jiantou_right_gray" translatesAutoresizingMaskIntoConstraints="NO" id="xbm-Iv-ybC">
+                            <rect key="frame" x="351" y="25" width="9" height="16"/>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="请填写" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nS6-qM-nGY">
+                            <rect key="frame" x="295" y="24" width="46" height="18"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="setFontByDevice">
+                                    <real key="value" value="15"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="姓名" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g01-sv-bik">
+                            <rect key="frame" x="30" y="24.5" width="31" height="18"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="setFontByDevice">
+                                    <real key="value" value="15"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <gestureRecognizers/>
+                    <constraints>
+                        <constraint firstItem="xbm-Iv-ybC" firstAttribute="leading" secondItem="nS6-qM-nGY" secondAttribute="trailing" constant="10" id="7ji-Fa-yvV"/>
+                        <constraint firstItem="nS6-qM-nGY" firstAttribute="centerY" secondItem="dwi-4t-Ffk" secondAttribute="centerY" id="8Hg-RD-jqh"/>
+                        <constraint firstItem="g01-sv-bik" firstAttribute="centerY" secondItem="dwi-4t-Ffk" secondAttribute="centerY" id="IC9-8l-YJ5"/>
+                        <constraint firstItem="dwi-4t-Ffk" firstAttribute="leading" secondItem="uTn-ZJ-3mk" secondAttribute="leading" constant="15" id="K0Z-kl-hnM"/>
+                        <constraint firstItem="g01-sv-bik" firstAttribute="leading" secondItem="dwi-4t-Ffk" secondAttribute="trailing" constant="5" id="aHE-Sw-mjp"/>
+                        <constraint firstItem="dwi-4t-Ffk" firstAttribute="centerY" secondItem="uTn-ZJ-3mk" secondAttribute="centerY" id="aSS-vr-CCW"/>
+                        <constraint firstAttribute="trailing" secondItem="xbm-Iv-ybC" secondAttribute="trailing" constant="15" id="ta1-LJ-pl4"/>
+                        <constraint firstItem="xbm-Iv-ybC" firstAttribute="centerY" secondItem="dwi-4t-Ffk" secondAttribute="centerY" id="whu-MV-08M"/>
+                    </constraints>
+                    <connections>
+                        <outletCollection property="gestureRecognizers" destination="rLY-Qt-Zqh" appends="YES" id="gEw-q4-oUf"/>
+                    </connections>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YBx-zo-4tc">
+                    <rect key="frame" x="0.0" y="175" width="375" height="67"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bitian_xinghao" translatesAutoresizingMaskIntoConstraints="NO" id="siR-hj-9Cl">
+                            <rect key="frame" x="15" y="28.5" width="10" height="10"/>
+                        </imageView>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="jiantou_right_gray" translatesAutoresizingMaskIntoConstraints="NO" id="m2h-cT-2ZY">
+                            <rect key="frame" x="351" y="25.5" width="9" height="16"/>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="货车照片" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3cw-9K-e6S">
+                            <rect key="frame" x="30" y="25" width="61.5" height="18"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="setFontByDevice">
+                                    <real key="value" value="15"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <gestureRecognizers/>
+                    <constraints>
+                        <constraint firstItem="m2h-cT-2ZY" firstAttribute="centerY" secondItem="siR-hj-9Cl" secondAttribute="centerY" id="M0o-L0-Drq"/>
+                        <constraint firstItem="siR-hj-9Cl" firstAttribute="centerY" secondItem="YBx-zo-4tc" secondAttribute="centerY" id="RHl-ht-buK"/>
+                        <constraint firstAttribute="trailing" secondItem="m2h-cT-2ZY" secondAttribute="trailing" constant="15" id="TKH-sR-Py0"/>
+                        <constraint firstItem="siR-hj-9Cl" firstAttribute="leading" secondItem="YBx-zo-4tc" secondAttribute="leading" constant="15" id="oiY-Lf-SHr"/>
+                        <constraint firstItem="3cw-9K-e6S" firstAttribute="centerY" secondItem="siR-hj-9Cl" secondAttribute="centerY" id="pke-P9-2Ce"/>
+                        <constraint firstItem="3cw-9K-e6S" firstAttribute="leading" secondItem="siR-hj-9Cl" secondAttribute="trailing" constant="5" id="q6F-uh-Wl5"/>
+                    </constraints>
+                    <connections>
+                        <outletCollection property="gestureRecognizers" destination="FbM-uw-S3U" appends="YES" id="jaP-9N-p0X"/>
+                    </connections>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.94901960780000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="4lE-wN-Rav" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="3Tf-nx-iJS"/>
+                <constraint firstItem="4lE-wN-Rav" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="3ag-O2-IV1"/>
+                <constraint firstAttribute="trailing" secondItem="uTn-ZJ-3mk" secondAttribute="trailing" id="3xP-ug-mbM"/>
+                <constraint firstItem="uTn-ZJ-3mk" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="7LV-tO-fxR"/>
+                <constraint firstAttribute="trailing" secondItem="YBx-zo-4tc" secondAttribute="trailing" id="Y9x-tr-4FH"/>
+                <constraint firstItem="uTn-ZJ-3mk" firstAttribute="top" secondItem="4lE-wN-Rav" secondAttribute="bottom" constant="1" id="ZKA-jy-xol"/>
+                <constraint firstItem="4lE-wN-Rav" firstAttribute="height" secondItem="i5M-Pr-FkT" secondAttribute="height" multiplier="0.16" id="efD-Nt-KlT"/>
+                <constraint firstItem="YBx-zo-4tc" firstAttribute="height" secondItem="uTn-ZJ-3mk" secondAttribute="height" id="txs-5x-g6Y"/>
+                <constraint firstAttribute="trailing" secondItem="4lE-wN-Rav" secondAttribute="trailing" id="y3x-pT-MdD"/>
+                <constraint firstItem="YBx-zo-4tc" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="ydZ-18-SFh"/>
+                <constraint firstItem="uTn-ZJ-3mk" firstAttribute="height" secondItem="i5M-Pr-FkT" secondAttribute="height" multiplier="0.1" id="zU6-pL-Tmw"/>
+                <constraint firstItem="YBx-zo-4tc" firstAttribute="top" secondItem="uTn-ZJ-3mk" secondAttribute="bottom" constant="1" id="zlR-cw-cf1"/>
+            </constraints>
+            <point key="canvasLocation" x="-149" y="-262"/>
+        </view>
+        <tapGestureRecognizer id="rLY-Qt-Zqh">
+            <connections>
+                <action selector="changeNameAction:" destination="-1" id="zR1-Sv-nrd"/>
+            </connections>
+        </tapGestureRecognizer>
+        <tapGestureRecognizer id="6Vu-Df-7Jg">
+            <connections>
+                <action selector="changeUserNameAction:" destination="-1" id="jnW-3z-If6"/>
+            </connections>
+        </tapGestureRecognizer>
+        <tapGestureRecognizer id="FbM-uw-S3U">
+            <connections>
+                <action selector="changeCarImage:" destination="-1" id="BJT-GM-4yt"/>
+            </connections>
+        </tapGestureRecognizer>
+    </objects>
+    <resources>
+        <image name="bitian_xinghao" width="10" height="10"/>
+        <image name="jiantou_right_gray" width="9" height="16"/>
+    </resources>
+</document>

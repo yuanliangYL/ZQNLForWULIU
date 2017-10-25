@@ -1,0 +1,36 @@
+//
+//  PrefixHeader.pch
+//  WULIU_iOS
+//
+//  Created by Miaomiao Dai on 2017/8/19.
+//  Copyright © 2017年 Miaomiao Dai. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+#import "WuLiu.h"
+#import "WuLiuDefine.h"
+#import "Https.h"
+
+#import <ReactiveCocoa/ReactiveCocoa.h>
+#import "AFNetWorking.h"
+#import <SDWebImage/UIButton+WebCache.h>
+#import <SDWebImage/UIImageView+WebCache.h>
+#import "MBProgressHud.h"
+#import "MJExtension.h"
+#import "MJRefresh.h"
+#import "IQKeyboardManager.h"
+#import <Masonry.h>
+#import "NSString+MD5.h"
+#import "SDNetAPIClient.h"
+#import "Singleton.h"
+#import "WoDeModel.h"
+#import "YLRefreshHeader.h"
+#import "YLMBProgressHUD.h"
+#import "TZImagePickerController.h"
+#import "UIImageView+LFLHelper.h"
+
+#endif /* PrefixHeader_pch */

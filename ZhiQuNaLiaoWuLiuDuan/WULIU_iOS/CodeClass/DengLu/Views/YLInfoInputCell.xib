@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="86" id="KGk-i7-Jjw" customClass="YLInfoInputCell">
+            <rect key="frame" x="0.0" y="0.0" width="321" height="86"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="321" height="85"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="n6t-jn-7ha">
+                        <rect key="frame" x="0.0" y="84" width="321" height="1"/>
+                        <color key="backgroundColor" white="0.8452148438" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="ujv-CX-egg"/>
+                        </constraints>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="真实姓名" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i2Z-p9-fnd">
+                        <rect key="frame" x="15" y="10" width="291" height="18"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="setFontByDevice">
+                                <real key="value" value="15"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </label>
+                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="填写本人驾驶证号" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="sTK-0J-RB2">
+                        <rect key="frame" x="15" y="40" width="291" height="35"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="35" id="Rxw-ZQ-HN0"/>
+                        </constraints>
+                        <nil key="textColor"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <textInputTraits key="textInputTraits"/>
+                    </textField>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="n6t-jn-7ha" secondAttribute="trailing" id="6OS-PY-xug"/>
+                    <constraint firstItem="sTK-0J-RB2" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" multiplier="1.35" id="CVS-ft-Vmp"/>
+                    <constraint firstAttribute="bottom" secondItem="n6t-jn-7ha" secondAttribute="bottom" id="Kgk-c1-3QS"/>
+                    <constraint firstAttribute="trailing" secondItem="sTK-0J-RB2" secondAttribute="trailing" constant="15" id="R2y-hx-991"/>
+                    <constraint firstItem="n6t-jn-7ha" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="clv-0A-iE2"/>
+                    <constraint firstItem="i2Z-p9-fnd" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" multiplier="0.45" id="es3-nh-igI"/>
+                    <constraint firstItem="i2Z-p9-fnd" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="hnG-te-Du8"/>
+                    <constraint firstItem="sTK-0J-RB2" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="k1n-n5-AdU"/>
+                    <constraint firstAttribute="trailing" secondItem="i2Z-p9-fnd" secondAttribute="trailing" constant="15" id="ofY-go-VOZ"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="InfoTF" destination="sTK-0J-RB2" id="SPv-gE-oI5"/>
+                <outlet property="nameLabel" destination="i2Z-p9-fnd" id="szT-2m-XF9"/>
+            </connections>
+            <point key="canvasLocation" x="-266" y="-53"/>
+        </tableViewCell>
+    </objects>
+</document>

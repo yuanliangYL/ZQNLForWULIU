@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>leftiv</key>
+		<string>wode_icon_order_p</string>
+		<key>title</key>
+		<string>物流订单消息</string>
+	</dict>
+	<dict>
+		<key>leftiv</key>
+		<string>message_wuliu</string>
+		<key>title</key>
+		<string>物流申请消息</string>
+	</dict>
+	<dict>
+		<key>leftiv</key>
+		<string>message_person</string>
+		<key>title</key>
+		<string>个人消息</string>
+	</dict>
+	<dict>
+		<key>leftiv</key>
+		<string>message_xitong</string>
+		<key>title</key>
+		<string>系统消息</string>
+	</dict>
+</array>
+</plist>
